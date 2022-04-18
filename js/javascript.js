@@ -1,13 +1,22 @@
 $(document).ready(function() {
     $(document).on("click", ".icon-tuyet", function() {
-        var classNav = $("#nav-tuyet").attr("class");
+        var classNav = $("#myTopnav-tuyet").attr("class");
         console.log(classNav);
-        if (classNav === "nav-tuyet")
-            $("#nav-tuyet").addClass("responsive");
+        if (classNav === "topnav-tuyet")
+            $("#myTopnav-tuyet").addClass("responsive-tuyet");
         else 
-        $("#nav-tuyet").removeClass("responsive");
+        $("#myTopnav-tuyet").removeClass("responsive-tuyet");
+    });
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
     });
 });
+
 
 let slideIndex = 0;
 showSlides();

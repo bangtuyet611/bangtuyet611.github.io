@@ -5,115 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuyết E-Book Shop</title>
+    <title> Tuyết E-Book Shop </title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <!-- navigation bar -->
-    <div class="nav-tuyet" id="nav-tuyet">
-        <ul>
-            <li class="nav-left-tuyet">
-                <a> TUYẾT E-BOOK </a>
-            </li>
-            <li id="item-center-tuyet">
-                <a> HOME </a>
-            </li>
-            <li id="item-center-tuyet">
-                <a> BOOK </a>
-            </li>
-            <li id="item-center-tuyet">
-                <a> DISCOVER </a>
-            </li>
-            <li class="nav-right-tuyet">
-                <a>
-                    <i class="fas fa-search"></i>
-                </a>
-            </li>
-            <li class="nav-right-tuyet">
-                <a>
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-            </li>
-            <li class="icon-tuyet">
-                <a>
-                    <i class="fas fa-bars"></i>
-                </a>
-            </li>
-        </ul>
+    <div class="topnav-tuyet nav-fixed-top-tuyet" id="myTopnav-tuyet">
+        <a href="#home" class="active">Trang chủ</a>
+        <a href="#book">Sách</a>
+        <a href="#tinh-nang">Tính năng</a>
+        <a href="#about">Thông tin</a>
+        <a class="icon-tuyet">
+            <i class="fas fa-bars"></i>
+        </a>
     </div>
 
-    <!-- Giới thiệu -->
+    <div class="container-1-tuyet" id="home">
+        <div class="col-6-tuyet middle-div-tuyet text-center-tuyet" style="height: 80%;">
+            <div class="middle-div-tuyet">
+                <p> Chào mừng bạn đến với website đọc sách điện tử! </p>
+                <p> Chúng tôi luôn sẵn sàng để giúp bạn! </p>
+                <h1> ĐƠN GIẢN HÓA VIỆC ĐỌC SÁCH</h1>
+                <input class="discount-tuyet" type="text" placeholder="Nhập email của bạn để được giảm 15%">
+                <br><br>
 
-    <div>
-        <div class="col-6-tuyet text-center-tuyet">
-            <p> Chào mừng bạn đến với website đọc sách điện tử! </p>
-            <p> Chúng tôi luôn sẵn sàng để giúp bạn! </p>
-            <h1> ĐƠN GIẢN HÓA VIỆC ĐỌC SÁCH</h1>
-            <input class="discount-tuyet" type="text" placeholder="Nhập email của bạn để được giảm 15%">
+                <a href="#hot"><button class="button-tuyet">Đọc ngay</button> </a>
 
-            <div>
-                <div class="col-6-tuyet" style="margin-top: 10px;">
-                    <div class="col-6-tuyet">
-                        <p style="text-align: right; vertical-align: center;"> 100+ &nbsp;</p>
+            </div>
+        </div>
+        <div class="col-6-tuyet middle-div-tuyet" style="height: 80%;">
+            <div class="middle-div-tuyet">
+                <div class="slideshow-container-tuyet">
+                    <div class="slide-tuyet fade-tuyet">
+                        <div class="numbertext-tuyet"> 1/3 </div>
+                        <img src="./img/books-1.jpg" style="width: 100%;">
+                        <div class="text-tuyet"> Tiêu đề </div>
                     </div>
-                    <div class="col-6-tuyet">
-                        <p style="text-align: left; vertical-align: center;"> Thể <br> loại </p>
+                    <div class="slide-tuyet fade-tuyet">
+                        <div class="numbertext-tuyet"> 2/3 </div>
+                        <img src="./img/book-2.jpg" style="width: 100%;">
+                        <div class="text-tuyet"> Tiêu đề </div>
+                    </div>
+                    <div class="slide-tuyet fade-tuyet">
+                        <div class="numbertext-tuyet"> 3/3 </div>
+                        <img src="./img/book-3.jpg" style="width: 100%;">
+                        <div class="text-tuyet"> Tiêu đề </div>
                     </div>
                 </div>
-                <div class="col-6-tuyet" style="margin-top: 10px;">
-                    <div class="col-6-tuyet">
-                        <p style="text-align: right; vertical-align: center;"> 20+ &nbsp;</p>
-                    </div>
-                    <div class="col-6-tuyet">
-                        <p style="text-align: left; vertical-align: center;"> Quốc <br> gia </p>
-                    </div>
+                <div style="text-align:center">
+                    <span class="dot-tuyet"></span>
+                    <span class="dot-tuyet"></span>
+                    <span class="dot-tuyet"></span>
                 </div>
             </div>
         </div>
-
-        <!-- slideshow -->
-        <div class="col-6-tuyet">
-            <div class="slideshow-container-tuyet">
-                <div class="slide-tuyet fade-tuyet">
-                    <div class="numbertext-tuyet"> 1/3 </div>
-                    <img src="./img/books-1.jpg" style="width: 100%;">
-                    <div class="text-tuyet"> Tiêu đề </div>
-                </div>
-                <div class="slide-tuyet fade-tuyet">
-                    <div class="numbertext-tuyet"> 2/3 </div>
-                    <img src="./img/book-2.jpg" style="width: 100%;">
-                    <div class="text-tuyet"> Tiêu đề </div>
-                </div>
-                <div class="slide-tuyet fade-tuyet">
-                    <div class="numbertext-tuyet"> 3/3 </div>
-                    <img src="./img/book-3.jpg" style="width: 100%;">
-                    <div class="text-tuyet"> Tiêu đề </div>
-                </div>
-            </div>
-            <div style="text-align:center">
-                <span class="dot-tuyet"></span> 
-                <span class="dot-tuyet"></span> 
-                <span class="dot-tuyet"></span> 
-              </div>
-        </div>
     </div>
 
-    <div class="col-12-tuyet">
-        <hr>
-    </div>
-
-    <!-- Thể loại sách -->
-
-    <div>
+    <div class="container-1-tuyet" id="hot">
         <div class="col-6-tuyet">
             <h1> Truyện tiêu biểu </h1>
         </div>
         <div class="col-6-tuyet">
             <p> Các truyện đang hot. <br> Các cuốn sách/truyện mà bạn đọc quan tâm nhiều nhất </p>
         </div>
-        <div class="col-12-tuyet">
+        <div class="col-12-tuyet middle-div-tuyet">
             <div class="col-4-tuyet img-tuyet">
                 <img src="./img/doremon.jpg" alt="">
                 <p> Doraemon </p>
@@ -129,13 +85,9 @@
         </div>
     </div>
 
-    <div class="col-12-tuyet">
-        <hr>
-    </div>
+    <div class="container-1-tuyet" id="tinh-nang">
+        <div class="col-6-tuyet middle-div-tuyet">
 
-    <!-- Tính năng website -->
-    <div class="col-12-tuyet">
-        <div class="col-6-tuyet">
             <h1> Tính năng website </h1>
             <div class="col-3-tuyet">
                 <h1> 01 </h1>
@@ -159,17 +111,12 @@
                 <p> Tìm kiếm sách theo tên, tác giả, nhà xuất bản, thể loại, quốc gia </p>
             </div>
         </div>
-        <div class="col-6-tuyet ads-img-tuyet">
+        <div class="col-6-tuyet ads-img-tuyet middle-div-tuyet">
             <img src="./img/book-product-ads.jpg" alt="">
         </div>
     </div>
 
-    <div class="col-12-tuyet">
-        <hr>
-    </div>
-
-    <!-- sản phẩm -->
-    <div id="product">
+    <div id="book">
         <div class="col-12-tuyet text-center-tuyet">
             <h1> SẢN PHẨM </h1>
             <p> Chỗ này ghi 1 cái gì đó </p>
@@ -178,23 +125,17 @@
         <div class="col-12-tuyet">
             <div class="nav-tuyet">
                 <ul>
-                    <li id="item-center-tuyet">
+                    <li>
                         <a> TẤT CẢ </a>
                     </li>
-                    <li id="item-center-tuyet">
+                    <li>
                         <a> THỂ LOẠI 1 </a>
                     </li>
-                    <li id="item-center-tuyet">
+                    <li>
                         <a> THỂ LOẠI 2 </a>
                     </li>
-                    <li id="item-center-tuyet">
+                    <li>
                         <a> THỂ LOẠI 3 </a>
-                    </li>
-                    <li id="item-center-tuyet">
-                        <a> THỂ LOẠI 4 </a>
-                    </li>
-                    <li id="item-center-tuyet">
-                        <a> THỂ LOẠI 5 </a>
                     </li>
                 </ul>
             </div>
@@ -242,13 +183,8 @@
         </div>
     </div>
 
-    <div class="col-12-tuyet">
-        <hr>
-    </div>
-
-    <!-- footer -->
-    <div>
-        <div class="col-4-tuyet">
+    <footer>
+        <div class="col-4-tuyet" id="about">
             <h1>Bỏ chữ dô chỗ này</h1>
             <p>Thêm mấy câu nói ở chỗ này</p>
         </div>
@@ -274,10 +210,9 @@
         </div>
 
         <div class="col-12-tuyet footer-tuyet">
-            <p>	&copy; 2021 - Bùi Thị Băng Tuyết </p>
+            <p> &copy; 2021 - Bùi Thị Băng Tuyết </p>
         </div>
-    </div>
-
+    </footer>
     <!-- javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/javascript.js"></script>
