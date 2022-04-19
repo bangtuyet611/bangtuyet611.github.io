@@ -78,6 +78,10 @@ body {
 	font-size: 17px;
 }
 
+.container-1-tuyet#home > .col-6-tuyet {
+	height: 80%;
+}
+
 .topnav-tuyet a:hover {
 	background-color: rgb(83, 83, 83);
 }
@@ -99,7 +103,7 @@ body {
 	z-index: 1030
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.topnav-tuyet a:not(:first-child) {
 		display: none;
 	}
@@ -109,7 +113,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.topnav-tuyet.responsive-tuyet {
 		position: relative;
 	}
@@ -122,6 +126,37 @@ body {
 		float: none;
 		display: block;
 		text-align: left;
+	}
+
+	.container-1-tuyet#home > .col-6-tuyet {
+		clear: both;
+		width: 100%;
+		height: fit-content;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container-1-tuyet#hot > .col-12-tuyet > .col-4-tuyet {
+		width: 100%;
+	}
+	.container-1-tuyet#hot > .col-12-tuyet > .col-4-tuyet.img-tuyet {
+		height: 60vh;
+	}
+	.container-1-tuyet#hot > .col-12-tuyet#truyen-hot {
+		margin-top: 16em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container-1-tuyet#tinh-nang > .col-6-tuyet {
+		width: 100%;
+	}
+	.container-1-tuyet#tinh-nang > .ads-img-tuyet {
+		display: none;
+	}
+
+	div#book {
+		margin-top: 10em;
 	}
 }
 
@@ -141,6 +176,7 @@ div.middle-div-tuyet {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	padding-top: 1em;
 }
 
 .discount-tuyet {
