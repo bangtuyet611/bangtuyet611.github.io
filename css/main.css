@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100&display=swap');
+
+:root {
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--black);
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.header-tuyet .header-1-tuyet {
+    background-color: #fff;
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-tuyet .header-1-tuyet .logo-tuyet {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+
+}
+
+.header-tuyet .header-1-tuyet .logo-tuyet i {
+    color: var(--green)
+}
+
+.header-tuyet .header-1-tuyet .search-form-tuyet {
+    width: 50rem;
+    height: 5rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.header-tuyet .header-1-tuyet .search-form-tuyet input {
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+
+.header-tuyet .header-1-tuyet .search-form-tuyet label {
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+}
+
+.header-tuyet .header-1-tuyet .search-form-tuyet label:hover {
+    color: var(--green);
+}
+
+.header-tuyet .header-1-tuyet .icons-tuyet div,
+.header-tuyet .header-1-tuyet .icons-tuyet a {
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header-tuyet .header-1-tuyet .icons-tuyet div:hover,
+.header-tuyet .header-1-tuyet .icons-tuyet a:hover {
+    color: var(--green);
+}
+
+#search-btn-tuyet {
+    display: none;
+}
+
+.header-tuyet .header-2-tuyet {
+    background: var(--green);
+}
+
+.header-tuyet .header-2-tuyet .navbar-tuyet {
+    text-align: center;
+}
+
+.header-tuyet .header-2-tuyet .navbar-tuyet a {
+    color: #fff;
+    display: inline-block;
+    padding: 1.2rem;
+    font-size: 1.7rem;
+}
+
+.header-tuyet .header-2-tuyet .navbar-tuyet a:hover {
+    background: var(--dark-color);
+}
+
+.header-tuyet .header-2-tuyet.active {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.bottom-navbar-tuyet {
+    text-align: center;
+    background: var(--green);
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    display: none;
+}
+
+.bottom-navbar-tuyet a {
+    font-size: 2.5rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+.bottom-navbar-tuyet a:hover {
+    background: var(--dark-color);
+}
+
+.btn-tuyet {
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.9rem 3rem;
+    border-radius: .5rem;
+    color:#fff;
+    background:var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-tuyet:hover {
+    background:var(--dark-color);
+}
+
+.home-tuyet {
+    background: url('../img/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-tuyet .row-tuyet {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home-tuyet .row-tuyet .content-tuyet {
+    flex: 1 1 42rem;
+}
+
+.home-tuyet .row-tuyet .content-tuyet h3 {
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home-tuyet .row-tuyet .content-tuyet p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home-tuyet .row-tuyet .books-slider-tuyet {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home-tuyet .row-tuyet .books-slider-tuyet .stand-tuyet {
+    width:100%;
+    margin-top: -2rem;
+}
+
+.home-tuyet .row-tuyet .books-slider-tuyet a img {
+    height: 25rem;
+}
+
+.home-tuyet .row-tuyet .books-slider-tuyet a:hover img {
+    transform: scale(.9);
+}

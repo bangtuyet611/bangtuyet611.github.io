@@ -1,0 +1,67 @@
+:root {
+    --green:#27ae60;
+    --dark-color:#219150;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header-tuyet .header-1-tuyet {
+        padding: 2rem;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-tuyet .header-2-tuyet {
+        display: none;
+    }
+
+    #search-btn-tuyet {
+        display: inline-block;
+    }
+
+    .header-tuyet .header-1-tuyet {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .header-tuyet .header-1-tuyet .search-form-tuyet {
+        position: absolute;
+        top: -115%; right: 2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .header-tuyet .header-1-tuyet .search-form-tuyet.active {
+        top: 115%;
+    }
+
+    .bottom-navbar-tuyet {
+        display: block;
+    }
+
+    .home-tuyet .row-tuyet .content-tuyet {
+        text-align: center;
+    }
+
+    .home-tuyet .row-tuyet .content-tuyet h3 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

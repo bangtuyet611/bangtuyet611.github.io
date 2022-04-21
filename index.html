@@ -1,197 +1,79 @@
 <!DOCTYPE html>
 <html lang="vi-vn">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tuyết E-Book Shop </title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title> E-Book Shop </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
+<body>
+    <header class="header-tuyet">
+        <div class="header-1-tuyet">
+            <a href="" class="logo-tuyet"> <i class="fas fa-book"></i> E-BOOK </a>
 
-<body style="background-color: #1e1e1e;">
-    <header class="header">
-        <div id="header-tuyet">
-            <a href="#home" class="logo-tuyet"> <i class="fas fa-book"></i> TUYET BOOK </a>
-    
-            <div class="menu-tuyet">
-                <a href="#book">Sách</a>
-                <a href="#tinh-nang">Lợi ích</a>
-                <a href="#about">Thông tin</a>
+            <form action="" class="search-form-tuyet">
+                <input type="search" placeholder="Tìm kiếm..." id="search-box-tuyet">
+                <label for="search-box-tuyet" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons-tuyet">
+                <div id="search-btn-tuyet" class="fas fa-search"></div>
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <div id="login-btn-tuyet" class="fas fa-user"></div>
             </div>
-    
-            <div class="nav-button-tuyet">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-book"></i>
-            </div>
+        </div>
+
+        <div class="header-2-tuyet">
+            <nav class="navbar-tuyet">
+                <a href="#"> Trang chủ </a>
+                <a href="#"> Tính năng </a>
+                <a href="#"> Đánh giá </a>
+                <a href="#"> Liên hệ </a>
+            </nav>
         </div>
     </header>
 
-    <section class="home-tuyet" id="home-tuyet">
+    <!-- navbar nam ben duoi hien khi <= 768px-->
+    <nav class="bottom-navbar-tuyet">
+        <a href="#" class="fas fa-home"></a>
+        <a href="#" class="fas fa-home"></a>
+        <a href="#" class="fas fa-home"></a>
+        <a href="#" class="fas fa-home"></a>
+    </nav>
+    
+    <section id="home-tuyet" class="home-tuyet">
         <div class="row-tuyet">
             <div class="content-tuyet">
-                <p> Chúng tôi ở đây để giúp bạn </p>
-                <h1> ĐƠN GIẢN HÓA VIỆC ĐỌC SÁCH</h1>
-                <input class="discount-tuyet" type="text" placeholder="Nhập email của bạn để nhận thông báo">
-                <br><br>
-
-                <a href="#hot"><button class="button-tuyet">Đọc ngay</button> </a>
+                <h3> Đơn giản việc đọc sách </h3>
+                <p>
+                    Tôi tạo ra website này để giúp các bạn có thể tìm kiếm sách dễ dàng, nhanh chóng cùng thể loại đa dạng để bạn có thể thoải mái đọc mà không cần mất nhiều công sức.
+                </p>
+                <a href="#" class="btn-tuyet"> đọc ngay </a>
             </div>
 
-            <div class="swiper-tuyet book-slider-tuyet">
-                <div class="swiper-wrapper-tuyet">
-                    <img src="./img/book-bia.png" style="width: 100%;" />
+            <div class="swiper books-slider-tuyet">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="img/book-1.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-2.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-3.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-4.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-5.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="img/book-6.png" alt=""></a>
                 </div>
+                <img src="img/stand.png" class="stand-tuyet" alt="">
             </div>
         </div>
     </section>
-
-    <section class="loi-ich-tuyet" id="tinh-nang">
-        <div class="content-loi-ich-tuyet col-6-tuyet ">
-            <h1 class="heading-loiich-tuyet"> LỢI ÍCH CỦA VIỆC <br> ĐỌC SÁCH <hr></h1>
-            <div class="content-loiich-tuyet">
-                <div class="col-3-tuyet">
-                    <h1 class="number-tuyet"> 01 </h1>
-                </div>
-                <div class="col-9-tuyet">
-                    <h1 class="title-tuyet"> Giúp phát triển não </h1>
-                    <p> Duy trì thói quen đọc sách mỗi ngày là một trong những cách thức kích thích trí não làm việc, ngăn chặn khả năng mắc bệnh alzheimer và mất trí nhớ khi về già </p>
-                </div>
-                <div class="col-3-tuyet">
-                    <h1 class="number-tuyet"> 02 </h1>
-                </div>
-                <div class="col-9-tuyet">
-                    <h1 class="title-tuyet"> Giúp mở rộng vốn từ </h1>
-                    <p> Đọc càng nhiều bạn sẽ biết thêm được nhiều từ ngữ, và có thể biến chúng thành ngôn ngữ hàng ngày giúp giao tiếp lưu loát, khéo léo và nâng cao sự tự tin. </p>
-                </div>
-                <div class="col-3-tuyet">
-                    <h1 class="number-tuyet"> 03 </h1>
-                </div>
-                <div class="col-9-tuyet">
-                    <h1 class="title-tuyet"> Cải thiện tư duy phân tích </h1>
-                    <p> Một cuốn tiểu thuyết kỳ bí hay một tập truyện trinh thám sẽ thúc đẩy bạn đưa ra những phán đoán, phân tích các tình tiết, liên kết chúng lại để tìm ra mấu chốt vấn đề. </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-6-tuyet ads-img-tuyet ">
-            <img src="./img/book-product-ads-2.jpg" alt="">
-        </div>
-    </section>
-
-    <div class="container-1-tuyet" id="hot">
-        <div class="col-12-tuyet text-center-tuyet">
-            <h1 class="heading"> <span>SÁCH NỔI BẬT</span> </h1>
-        </div>
-        <div class="col-12-tuyet sach-noi-bat-tuyet" id="truyen-hot">
-            <div class="col-4-tuyet sach-nb-tuyet">
-                <img src="./img/book-sample.png" alt="">
-                <p>Sách hay tháng 2</p>
-            </div>
-            <div class="col-4-tuyet sach-nb-tuyet">
-                <img src="./img/book-sample.png" alt="">
-                <p>Sách hay tháng 3</p>
-            </div>
-            <div class="col-4-tuyet sach-nb-tuyet">
-                <img src="./img/book-sample.png" alt="">
-                <p>Sách hay tháng 4</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="book">
-        <div class="col-12-tuyet text-center-tuyet">
-            <h1 class="heading"> <span>TẤT CẢ SÁCH</span> </h1>
-        </div>
-
-        <div class="col-12-tuyet" style="margin-bottom: 20px">
-            <div class="nav-tuyet">
-                <ul>
-                    <li id="tieu-thuyet">
-                        <a> TIỂU THUYẾT </a>
-                    </li>
-                    <li id="khoa-hoc">
-                        <a> KHOA HỌC </a>
-                    </li>
-                    <li id="van-hoc">
-                        <a> VĂN HỌC </a>
-                    </li>
-                    <li id="thieu-nhi">
-                        <a> SÁCH THIẾU NHI </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-        <div class="col-3-tuyet product-tuyet">
-            <img src="./img/book-sample-2.png" alt="" id="book-sample">
-            <p> Book Cover</p>
-        </div>
-    </div>
-
-    <hr style="margin-top: 30px">
-    <footer class=" text-center-tuyet footer-tuyet" >
-        
-        <div class="col-4-tuyet " id="about">
-            <h1> Tuyết E-Book </h1>
-            <p> Website đọc sách online </p>
-        </div>
-        <div class="col-2-tuyet">
-            <h1> Điều khoản </h1>
-            <p> Quy định </p>
-            <p> Bản quyền </p>
-        </div>
-        <div class="col-2-tuyet">
-            <h1>Menu</h1>
-            <p> Nội dung 1</p>
-            <p> Nội dung 2</p>
-        </div>
-        <div class="col-2-tuyet">
-            <h1>Menu</h1>
-            <p> Nội dung 1</p>
-            <p> Nội dung 2</p>
-        </div>
-        <div class="col-2-tuyet">
-            <h1>Liên hệ</h1>
-            <p> Fanpage </p>
-            <p> Twitter </p>
-        </div>
-
-        <div class="col-12-tuyet footer-tuyet">
-            <p> &copy; 2022 - Bùi Thị Băng Tuyết </p>
-        </div>
-    </footer>
-    <!-- javascript -->
+    <!-- script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/javascript.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
