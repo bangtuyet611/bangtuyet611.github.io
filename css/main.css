@@ -3,6 +3,7 @@
 :root {
     --green:#27ae60;
     --dark-color:#219150;
+    --yellow: rgb(255,255,0);
     --black:#444;
     --light-color:#666;
     --border:.1rem solid rgba(0,0,0,.1);
@@ -355,5 +356,110 @@ section {
 
 .book-tuyet .book-slider-tuyet .box-tuyet .content-tuyet .stars-tuyet i {
     font-size: 1.5rem;
+    color: var(--yellow);
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet {
+    margin: 2rem 0;
+    width: 30rem;
+    border: var(--border);
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet .image-tuyet {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet .image-tuyet img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet:hover {
+    border: var(--border-hover);
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet:hover .image-tuyet img {
+    transform: scale(1.1);
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet .content-tuyet {
+    padding: 1.5rem;
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet .content-tuyet h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+}
+
+.blogs-tuyet .blogs-slider-tuyet .box-tuyet .content-tuyet p {
+    font-size: 1.4rem;
+    color: var(--light-color);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.footer-tuyet .box-container-tuyet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-tuyet .box-container-tuyet .box-tuyet h3 {
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: 1rem 0;
+
+}
+
+.footer-tuyet .box-container-tuyet .box-tuyet a {
+    display: block;
+    font-size: 1.4em;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+
+.footer-tuyet .box-container-tuyet .box-tuyet a i {
+    color: var(--green);
+    padding-right: .5rem;
+}
+
+.footer-tuyet .box-container-tuyet .box-tuyet a:hover i {
+    padding-right: 2rem;
+}
+
+.footer-tuyet .share-tuyet {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-tuyet .share-tuyet a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:var(--green);
+    margin:0 .3rem;
+    border-radius: 50%; 
+}
+
+.footer-tuyet .share-tuyet a:hover {
+    background: var(--black);
+}
+
+.footer-tuyet .credit-tuyet {
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--light-color);
+    text-align: center;
+}
+
+.footer-tuyet .credit-tuyet span {
     color: var(--green);
 }
