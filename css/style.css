@@ -80,6 +80,7 @@ body {
 
 .container-1-tuyet#home > .col-6-tuyet {
 	height: 80%;
+	background-color: #1E1E1E;
 }
 
 .topnav-tuyet a:hover {
@@ -180,7 +181,7 @@ div.middle-div-tuyet {
 }
 
 .discount-tuyet {
-	width: 60%;
+	width: 75%;
 	line-height: 40px;
 	border: 1px solid #aaa;
 	border-radius: 20px;
@@ -246,9 +247,9 @@ div.middle-div-tuyet {
 }
 
 .ads-img-tuyet img {
-	height: 500px;
+	width: 60%;
 	border-bottom-left-radius: 30%;
-	margin-left: 7rem;
+	margin-left: 12rem;
 }
 
 
@@ -272,7 +273,7 @@ div.middle-div-tuyet {
 }
 
 .button-tuyet {
-	background-color: #252525;
+	background-color: #353535;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -300,11 +301,11 @@ div.middle-div-tuyet {
 	display: block;
 	margin-left: auto;
     margin-right: auto;
-	filter: drop-shadow(10px 10px 4px #cfcfcf);
 }
 
 .product-tuyet p {
-	padding-left: 20%;
+	padding-left: 40%;
+	color: white;
 }
 
 .nav-tuyet {
@@ -319,4 +320,151 @@ div.middle-div-tuyet {
 .nav-tuyet ul {
 	height: 20px;
 	text-align: center;
+}
+
+/* New CSS */
+.header #header-tuyet {
+	background:#1E1E1E;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	padding:2rem 9%;
+}
+
+.header #header-tuyet .logo-tuyet {
+	font-size: 24px;
+    font-weight: bolder;
+    color:var(--black);
+	color: white;
+	text-decoration: none;
+}
+
+.header #header-tuyet .menu-tuyet {
+	display:flex;
+    align-items: center;
+}
+
+.header #header-tuyet .menu-tuyet a {
+	color: #989898;
+	text-decoration: none;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.header #header-tuyet .nav-button-tuyet i {
+	color: #989898;
+}
+
+.home-tuyet {
+	background-color: #1E1E1E;
+	padding-top: 40px;
+	padding-bottom: 85px;
+}
+
+.home-tuyet .row-tuyet {
+	display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.home-tuyet .row-tuyet .content-tuyet {
+	flex:1 1 42rem;
+	margin-left: 88px;
+}
+
+.home-tuyet .row-tuyet .content-tuyet h1{
+    font-size: 4.5rem;
+	color: white;
+}
+
+.home-tuyet .row-tuyet .content-tuyet p{
+    font-size: 18px;
+	color: white;
+	margin-bottom: -40px;
+}
+
+.home-tuyet .row-tuyet .book-slider-tuyet {
+	flex:1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.loi-ich-tuyet {
+	margin-left: 25px;
+	width: fit-content;
+}
+
+.heading-loiich-tuyet {
+	font-size: 48px;
+	margin-left: 70px;
+	color: lightgrey;
+}
+
+.content-loiich-tuyet {
+	width: fit-content;
+	margin-left: -40px;
+	color: rgb(165, 165, 165);
+}
+
+.number-tuyet {
+	font-size: 32px;
+	color: lightgrey;
+}
+
+.title-tuyet {
+	font-size: 34px;
+	color: rgb(200, 199, 199);
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.heading::before{
+    content: '';
+    position: absolute;
+    top:50%; left:0;
+    transform: translateY(-70%);
+    width: 100%;
+    height:.01rem;
+    background: white;
+    z-index: -1;
+}
+
+.heading span{
+    font-size: 2.5rem;
+    padding:.5rem 2rem;
+    color:var(--black);
+    background: #1e1e1e;
+    border:var(--border);
+	color: white;
+}
+
+.sach-noi-bat-tuyet {
+	margin-top: 30px;
+}
+
+.sach-nb-tuyet {
+	height: 500px;
+}
+
+.sach-nb-tuyet img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.sach-nb-tuyet p {
+	text-align: center;
+	font-size: 20px;
+	color: white;
+}
+
+.nav-tuyet ul li a {
+	color: white;
 }
